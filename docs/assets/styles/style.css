@@ -593,4 +593,89 @@ textarea {
 
 }
 
+ /*********************************Footer********************************/
+
+
+.pie-pagina{
+    width: 100%;
+    background-color: #c0a0c3;
+}
+
+.pie-pagina .grupo1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:50px;
+    padding: 45px 0;
+}
+
+.pie-pagina .grupo1 .box figure{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.pie-pagina .grupo1 .box h2{
+    color: white;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.pie-pagina .grupo1 .box ul{
+    padding: 0;
+    margin: 0;
+    
+}
+.memberninjacode li, .TecnologieHormonalCare li {
+  list-style: none; 
+  padding: 5px; 
+  margin-bottom: 5px; 
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  
+}
+
+.pie-pagina .grupo1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+
+.pie-pagina .grupo1 .redes-sociales a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #efefef;
+    margin-right: 10px;
+    background-color: #8F7193;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: all 300ms ease;
+}
+
+.pie-pagina .grupo1 .redes-sociales a:hover{
+    background-color: #efefef;
+    color: #0d2033;
+}
+
+
+.pie-pagina .grupo2{
+    background-color: #8F7193;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+
+@media screen and (max-width: 768px){
+    .pie-pagina .grupo1{
+        width:90%;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 30px;
+        padding: 35px 0;
+    }
+}
 
