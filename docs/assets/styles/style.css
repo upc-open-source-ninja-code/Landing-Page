@@ -417,3 +417,180 @@ body, html {
       align-items: center;
     }
   }
+
+
+/***************contact us form********/
+
+.contact-section {
+    background-image: url('assets/images/fondito.png');
+    background-size: cover; /* Ajusta el tamaño del fondo para cubrir el área */
+    padding: 50px; /* Agrega espacio alrededor del contenido */
+}
+
+.contact-content {
+    max-width: 600px; /* Limita el ancho del contenido */
+    margin: 0 auto; /* Centra el contenido horizontalmente */
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semitransparente */
+    padding: 40px;
+    border-radius: 10px; /* Borde redondeado */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+.contact-form h1 {
+    text-align: center; /* Centra el título */
+    margin-bottom: 20px;
+    color: #333; /* Color del texto */
+}
+
+.form-group {
+    margin-bottom: 20px; /* Espacio entre grupos de campos */
+}
+
+label {
+    display: block; /* Hace que las etiquetas estén en una nueva línea */
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc; /* Borde del campo */
+    border-radius: 5px;
+}
+
+textarea {
+    height: 150px; /* Altura del área de texto */
+}
+
+.submit-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #8F7193; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Transición suave al pasar el mouse */
+}
+
+.submit-btn:hover {
+    background-color: #c0a0c3 ; /* Color de fondo del botón al pasar el mouse */
+}
+
+  /************************************************************************/
+  
+  .more-information-container {
+    width: 100%;
+    height: auto;
+    position: relative;
+    background: white;
+    margin-top: 15px;
+    padding-bottom: 100px;
+    
+  }
+
+
+.welcome {
+    width: 480px;
+    position: relative;
+    color: black;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 33px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 13px;
+    padding-left: 15%;
+}
+
+.about-us {
+    position: relative;
+    color: #323842;
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 74px;
+    padding-left: 15%;
+}
+
+.know-more {
+    /*background-color: orange;*/
+    width: 50%;
+    position: relative;
+    color: #323842;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    padding-left: 15%;
+}
+
+.more-information-container{
+    /*background-color: red;*/
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+   
+}
+.about-us{
+    /*background-color: yellow;*/
+    margin: 0;
+    width: 70%;
+    height: 100px;
+    grid-column: 1;
+}
+.welcome{
+    /*background-color: green;*/
+    margin: 0;
+    width: 70%;
+    height: auto;
+    grid-column: 1;
+}
+.logoNinjacode img{
+  /*background-color: aqua;*/
+  position: relative;
+  width: 300px;
+  height: 300px;
+  grid-column: 2;
+}
+
+.logoNinjacode{
+  /*background-color: blue;*/
+  width: 300px;
+  height: 300px;
+  grid-column: 2;
+  margin-left: 20%;
+  margin-top: 0%;
+}
+@media screen and (max-width: 768px) {
+    .more-information-container {
+        padding-bottom: 100px; /* Ajusta el padding inferior para dispositivos móviles */
+    }
+
+    .welcome {
+        width: 90%; /* Cambia el ancho del texto para que ocupe todo el ancho en dispositivos móviles */
+        padding-left: 5%; /* Elimina el padding izquierdo en dispositivos móviles */
+        font-size: 16px;
+    }
+
+    .about-us{
+      width: auto;
+    }
+
+    .about-us,
+    .know-more {
+        padding-left: 5%; /* Elimina el padding izquierdo en dispositivos móviles */
+    }
+    .logoNinjacode{
+      grid-column:1;
+    }
+    .logoNinjacode img{
+      grid-column: 1;
+    }
+
+}
+
+
