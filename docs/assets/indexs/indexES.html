@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HormonalCare</title>
     <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/loginStyle.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <script src="../scripts/script.js"></script>
     
@@ -23,17 +24,60 @@
           <li class="nav-item"><a href="#plans-section" class="nav-link"> Precios</a></li>
           <li class="nav-item"><a href="#sectioncontactus" class="nav-link"> Contáctanos</a></li>
           <li class="nav-item"><a href="#more-information" class="nav-link"> Sobre nosotros</a></li>
+
+          <li class="nav-item" id="sesion" onclick="abrirLogin()"><a class="nav-link"> Iniciar sesión</a></li>
+
+          <button onclick="window.location.href='../../indexEN.html'">EN</button>
         </ul>
 
-        <div class="ButtonToTranslate">
-            <button onclick="window.location.href='../../indexEN.html'">EN</button>
-        </div>
-        <div class="auth">
-          <button class="login-button">Registrar</button>
-          <button class="signup-button">Ingresar</button>
-        </div>
+        
     </nav>
     </section>
+
+		
+
+    <!-- Login-->
+    <div id="loginOverlay" class="overlay">
+        <div class="container-overlay" id="container-overlay">
+            <span class="btnClose" id="closeBtn" onclick="cerrarLogin()">&#215;</span>
+            <div class="form-container registro">
+                <form>
+                    <h1>Crea una cuenta</h1>
+                
+                    <span>o usa tu email para el registro</span>
+                    <input type="text" placeholder="Nombre" id="nombreRegister">
+                    <input type="email" placeholder="Correo" id="emailRegister">
+                    <input type="password" placeholder="Contraseña" id="passwordRegister">
+                    <button>Crear cuenta</button>
+                </form>
+            </div>
+            <div class="form-container login">
+                <form>
+                    <h1>Ingresa</h1>
+            
+                    <span>o usa tu correo y contraseña</span>
+                    <input type="email" placeholder="Correo" id="emailLogin">
+                    <input type="password" placeholder="Contraseña" id="passwordLogin">
+                    <a href="#">Olvidaste tu contraseña?</a>
+                    <button>Iniciar sesión</button>
+                </form>
+            </div>
+            <div class="toggle-container">
+                <div class="toggle">
+                    <div class="toggle-panel toggle-left">
+                        <h1>Bienvenido <br>de vuelta!</h1>
+                        <p>Ingresa tus datos para <br> obtener el acceso completo</p>
+                        <button class="hidden" id="login">Ingresar</button>
+                    </div>
+                    <div class="toggle-panel toggle-right">
+                        <h1>Hola!</h1>
+                        <p>Registrate para obtener el acceso completo <br> a todas las funcionalidades</p>
+                        <button class="hidden" id="registro">Registrate</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!--Sección principal -->
 
@@ -230,8 +274,7 @@
 
     <!--Links-->
 
-
-    
+    <script src="../scripts/loginScript.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/5f7875a9e1.js" crossorigin="anonymous"></script>
 </body>
