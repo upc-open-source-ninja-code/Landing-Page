@@ -12,8 +12,8 @@
     
 </head>
 <body>
-    <!--Barra de navegación-->
-    <section class="nav-barbar-grande">
+    <!--Nav bar-->
+    <section class="nav-barbar-large">
     <nav class="navbar">
         <div class="logo">
           <img src="assets/images/HormonalCareLogo.png" alt="HormonalCareLogo" />
@@ -21,15 +21,13 @@
         </div>
         <button class="hamburger-icon" onclick="toggleNav()">☰</button>
         <ul class="nav-items">
-          <li class="nav-item"><a href="#swipersection" class="nav-link"> Features</a></li>
+          <li class="nav-item"><a href="#swiper-section" class="nav-link"> Features</a></li>
           <li class="nav-item"><a href="#plans-section" class="nav-link"> Pricing</a></li>
-          <li class="nav-item"><a href="#sectioncontactus" class="nav-link"> Contact us</a></li>
+          <li class="nav-item"><a href="#section-contact-us" class="nav-link"> Contact us</a></li>
           <li class="nav-item"><a href="#more-information" class="nav-link"> About us</a></li>
          
-          <li class="nav-item" id="sesion" onclick="abrirLogin()"><a class="nav-link"> Log in</a></li>
-          
         </ul>
-        <div class="ButtonToTranslate">
+        <div class="button-to-translate">
             <button onclick="window.location.href='assets/indexs/indexES.html'">ES</button>
         </div>
       
@@ -39,50 +37,8 @@
     </section>
 			
 
-    <!-- Login-->
-    <div id="loginOverlay" class="overlay">
-        <div class="container-overlay" id="container-overlay">
-            <span class="btnClose" id="closeBtn" onclick="cerrarLogin()">&#215;</span>
-            <div class="form-container registro">
-                <form>
-                    <h1>Create an account</h1>
-                
-                    <span>or use your email to register</span>
-                    <input type="text" placeholder="Nombre" id="nombreRegister">
-                    <input type="email" placeholder="Correo" id="emailRegister">
-                    <input type="password" placeholder="Contraseña" id="passwordRegister">
-                    <button>Create Account</button>
-                </form>
-            </div>
-            <div class="form-container login">
-                <form>
-                    <h1>Enter</h1>
-            
-                    <span>or use your email and password</span>
-                    <input type="email" placeholder="Correo" id="emailLogin">
-                    <input type="password" placeholder="Contraseña" id="passwordLogin">
-                    <a href="#">Did you forget your password?</a>
-                    <button>Log in</button>
-                </form>
-            </div>
-            <div class="toggle-container">
-                <div class="toggle">
-                    <div class="toggle-panel toggle-left">
-                        <h1>Welcome <br>back!</h1>
-                        <p>Enter your information to<br> get full access</p>
-                        <button class="hidden" id="login">Ingresar</button>
-                    </div>
-                    <div class="toggle-panel toggle-right">
-                        <h1>Hello!</h1>
-                        <p>Sign up to get full access <br> to all the functionalities of the "Hormonal Care" app</p>
-                        <button class="hidden" id="registro">Sign up</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <!--Sección principal -->
+    <!--Main section -->
 
     <section id="main" class = "main">
         <div class="main-image">
@@ -90,9 +46,9 @@
         </div>
     </section>
 
-    <!--Beneficios(features)-->
-    <section id= "swipersection" class="swipersection">
-        <div class="Titleswiper">
+    <!--Features-->
+    <section id= "swiper-section" class="swiper-section">
+        <div class="title-swiper">
             <h1>Features</h1>
         </div>
         <!-- Slider main container -->
@@ -134,17 +90,20 @@
         </div>
     
     </section>
-    <!--Planes(pricing)-->
+
+
+    <!--Pricing-->
 
     <section id="plans-section" class="plans-section">
         <h1>Pricing </s></h1>
         <p class="description">You can choose the plan that best suits your needs. HormonalCare has three subscription plans and offers a free trial.</p>
-        <div class="plans-container">
         
-          <!-- Plan Básico -->
-          <div class="plan-card basic">
+        
+        <div class="plans-container">
+          <!-- Basic -->
+          <div class="plan-card-basic">
             <h2>Basic</h2>
-            <p class="price">S/10 <span>/month</span></p>
+            <p class="price">S/. 10 <span>/month</span></p>
             <p class="plan-description">Perfect for the beginers</p>
             <ul class="plan-features">
               <li>Register up to 5 patients</li>
@@ -153,10 +112,10 @@
             <button class="plan-button-basic">Suscribe</button>
           </div>
           
-          <!-- Plan Regular -->
-          <div class="plan-card regular featured">
+          <!--Regular -->
+          <div class="plan-card-regular-featured">
             <h2>Regular</h2>
-            <p class="price">S/30.00 <span>/month</span></p>
+            <p class="price">S/. 30.00 <span>/month</span></p>
             <p class="plan-description">The most popular</p>
             <ul class="plan-features-regular">
               <li>Register up to 25 patients</li>
@@ -165,10 +124,10 @@
             <button class="plan-button-regular">Suscribe</button>
           </div>
           
-          <!-- Plan Premium -->
-          <div class="plan-card premium">
+          <!--Premium -->
+          <div class="plan-card-premium">
             <h2>Premium</h2>
-            <p class="price">S/80.00 <span>/month</span></p>
+            <p class="price">S/. 80.00 <span>/month</span></p>
             <p class="plan-description">The best for the profesionals</p>
             <ul class="plan-features">
               <li>Register up to ilimitado patients</li>
@@ -181,9 +140,9 @@
 
 
     
-    <!--Contacto(contact us)-->
-    <section id="sectioncontactus" class="sectioncontactus">
-        <div class="contact-section formulario-contacto" style="background-image: url('assets/images/fondito.png');">
+    <!--(contact us)-->
+    <section id="section-contact-us" class="section-contact-us">
+        <div class="contact-section-form-contact" style="background-image: url('assets/images/fondito.png');">
             <div class="contact-content">
               <div class="contact-form">
                 <h1>Contact us</h1>
@@ -203,8 +162,6 @@
                   <button type="submit" class="submit-btn">Send</button>
                 </form>
               </div>
-          
-             
           </div>
         </div>
     </section>
@@ -212,7 +169,7 @@
     <!--About us-->
     <section id="more-information" class="more-information">
         <div class ="more-information-container">
-            <div class="textinsideaboutus">
+            <div class="text-inside-about-us">
                 <div class ="know-more">Know more</div>
             <div class="about-us">About us</div>
             <div class="welcome">
@@ -222,7 +179,7 @@
             </div>
             </div>
             
-            <div class="logoNinjacode">
+            <div class="logo-Ninjacode">
                 <img src="assets/images/NinjaCodeLogo.jpg" alt="NinjaCodeLogo" />
             </div>
         </div>
@@ -235,11 +192,11 @@
 
 
     <!--Footer-->
-    <footer class="pie-pagina">
-        <div class="grupo1">
+    <footer class="main-footer">
+        <div class="group-1">
             <div class="box">
                 <h2>Members of NINJACODE</h2>
-                <ul class="memberninjacode">
+                <ul class="member-Ninjacode">
                     <li>Jherson Astuyauri</li>
                     <li>Sandro Quipesivana</li>
                     <li>Luis Chinchihualpa</li>
@@ -251,7 +208,7 @@
             <div class="box">
                 <h2>Technologies</h2>
                 
-                <ul class="TecnologieHormonalCare">
+                <ul class="tecnologies-HormonalCare">
                     <li>HTML</li>
                     <li>CSS</li>
                     <li>Javascript</li>
@@ -262,13 +219,13 @@
 
             <div class="box">
                 <h2>FOLLOW US</h2>
-                <div class="redes-sociales">
+                <div class="social-media">
                     <a href="#" class="Github"><i class="fab fa-github"></i></a>
                     
                 </div>
             </div>
         </div>
-        <div class="grupo2">
+        <div class="group-2">
             <small>&copy; 2024 <b>HormonalCare</b> - All rights reserved.</small>
         </div>
     </footer>

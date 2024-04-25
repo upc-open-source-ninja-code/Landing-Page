@@ -12,7 +12,7 @@
 </head>
 <body>
     <!--Barra de navegación-->
-    <section class="nav-barbar-grande">
+    <section class="nav-barbar-large">
     <nav class="navbar">
         <div class="logo">
           <img src="../images/HormonalCareLogo.png" alt="HormonalCareLogo" />
@@ -20,67 +20,21 @@
         </div>
         <button class="hamburger-icon" onclick="toggleNav()">☰</button>
         <ul class="nav-items">
-          <li class="nav-item"><a href="#swipersection" class="nav-link"> Beneficios</a></li>
+          <li class="nav-item"><a href="#swiper-section" class="nav-link"> Beneficios</a></li>
           <li class="nav-item"><a href="#plans-section" class="nav-link"> Precios</a></li>
-          <li class="nav-item"><a href="#sectioncontactus" class="nav-link"> Contáctanos</a></li>
+          <li class="nav-item"><a href="#section-contact-us" class="nav-link"> Contáctanos</a></li>
           <li class="nav-item"><a href="#more-information" class="nav-link"> Sobre nosotros</a></li>
-
-          <li class="nav-item" id="sesion" onclick="abrirLogin()"><a class="nav-link"> Iniciar sesión</a></li>
 
           
         </ul>
 
-        <div class="ButtonToTranslate">
+        <div class="button-to-translate">
             <button onclick="window.location.href='../../index.html'">EN</button>
         </div>
         
     </nav>
     </section>
 
-		
-
-    <!-- Login-->
-    <div id="loginOverlay" class="overlay">
-        <div class="container-overlay" id="container-overlay">
-            <span class="btnClose" id="closeBtn" onclick="cerrarLogin()">&#215;</span>
-            <div class="form-container registro">
-                <form>
-                    <h1>Crea una cuenta</h1>
-                
-                    <span>o usa tu email para el registro</span>
-                    <input type="text" placeholder="Nombre" id="nombreRegister">
-                    <input type="email" placeholder="Correo" id="emailRegister">
-                    <input type="password" placeholder="Contraseña" id="passwordRegister">
-                    <button>Crear cuenta</button>
-                </form>
-            </div>
-            <div class="form-container login">
-                <form>
-                    <h1>Ingresa</h1>
-            
-                    <span>o usa tu correo y contraseña</span>
-                    <input type="email" placeholder="Correo" id="emailLogin">
-                    <input type="password" placeholder="Contraseña" id="passwordLogin">
-                    <a href="#">Olvidaste tu contraseña?</a>
-                    <button>Iniciar sesión</button>
-                </form>
-            </div>
-            <div class="toggle-container">
-                <div class="toggle">
-                    <div class="toggle-panel toggle-left">
-                        <h1> Bienvenido <br> de vuelta!</h1>
-                        <p> Ingresa tus datos para <br> obtener el acceso completo</p>
-                        <button class="hidden" id="login">Ingresar</button>
-                    </div>
-                    <div class="toggle-panel toggle-right">
-                        <h1>Hola!</h1>
-                        <p>Registrate para obtener el acceso completo <br> a todas las funcionalidades</p>
-                        <button class="hidden" id="registro">Registrate</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!--Sección principal -->
 
@@ -91,8 +45,8 @@
     </section>
 
     <!--Beneficios(features)-->
-    <section id= "swipersection" class="swipersection">
-        <div class="Titleswiper">
+    <section id= "swiper-section" class="swiper-section">
+        <div class="title-swiper">
             <h1>Beneficios</h1>
         </div>
         <!-- Slider main container -->
@@ -142,7 +96,7 @@
         <div class="plans-container">
         
           <!-- Plan Básico -->
-          <div class="plan-card basic">
+          <div class="plan-card-basic">
             <h2>Básico</h2>
             <p class="price">S/10 <span>/mes</span></p>
             <p class="plan-description">Perfecto para los principiantes</p>
@@ -154,7 +108,7 @@
           </div>
           
           <!-- Plan Regular -->
-          <div class="plan-card regular featured">
+          <div class="plan-card-regular-featured">
             <h2>Regular</h2>
             <p class="price">S/30.00 <span>/mes</span></p>
             <p class="plan-description">El más popular</p>
@@ -166,7 +120,7 @@
           </div>
           
           <!-- Plan Premium -->
-          <div class="plan-card premium">
+          <div class="plan-card-premium"">
             <h2>Premium</h2>
             <p class="price">S/80.00 <span>/mes</span></p>
             <p class="plan-description">El mejor para los profesionales.</p>
@@ -182,8 +136,8 @@
 
     
     <!--Contacto(contact us)-->
-    <section id="sectioncontactus" class="sectioncontactus">
-        <div class="contact-section formulario-contacto" style="background-image: url('assets/images/fondito.png');">
+    <section id="section-contact-us" class="section-contact-us">
+        <div class="contact-section-form-contact" style="background-image: url('assets/images/fondito.png');">
             <div class="contact-content">
               <div class="contact-form">
                 <h1>Contáctanos</h1>
@@ -209,10 +163,10 @@
         </div>
     </section>
     
-    <!--About us-->
+    <!--Sobre nosotros-->
     <section id="more-information" class="more-information">
         <div class ="more-information-container">
-            <div class="textinsideaboutus">
+            <div class="text-inside-about-us">
                 <div class ="know-more">Conoce más</div>
             <div class="about-us">Sobre nosotros</div>
             <div class="welcome">
@@ -222,7 +176,7 @@
             </div>
             </div>
             
-            <div class="logoNinjacode">
+            <div class="logo-Ninjacode">
                 <img src="../images/NinjaCodeLogo.jpg" alt="NinjaCodeLogo" />
                 
             </div>
@@ -236,11 +190,11 @@
 
 
     <!--Footer-->
-    <footer class="pie-pagina">
-        <div class="grupo1">
+    <footer class="main-footer">
+        <div class="group-1">
             <div class="box">
                 <h2>Miembros de NINJACODE</h2>
-                <ul class="memberninjacode">
+                <ul class="member-Ninjacode">
                     <li>Jherson Astuyauri</li>
                     <li>Sandro Quipesivana</li>
                     <li>Luis Chinchihualpa</li>
@@ -252,7 +206,7 @@
             <div class="box">
                 <h2>Tecnologías</h2>
                 
-                <ul class="TecnologieHormonalCare">
+                <ul class="tecnologies-HormonalCare">
                     <li>HTML</li>
                     <li>CSS</li>
                     <li>Javascript</li>
@@ -263,13 +217,13 @@
 
             <div class="box">
                 <h2>Siguenos</h2>
-                <div class="redes-sociales">
+                <div class="social-media">
                     <a href="#" class="Github"><i class="fab fa-github"></i></a>
                     
                 </div>
             </div>
         </div>
-        <div class="grupo2">
+        <div class="group-2">
             <small>&copy; 2024 <b>HormonalCare</b> - Todos los derechos reservados.</small>
         </div>
     </footer>
