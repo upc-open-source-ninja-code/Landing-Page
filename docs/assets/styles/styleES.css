@@ -644,3 +644,78 @@ body, html {
   }
 }
 
+/**********************************pitch message**************************************/
+.pitch-message {
+  background-color: #8F7193; 
+  color: #ffffff;
+  padding: 50px 20px;
+  text-align: center;
+  transition: background-color 0.5s ease; 
+}
+
+.pitch-message .container {
+  max-width: 800px;
+  margin: 0 auto;
+  animation: slideInFromLeft 1s ease-out; 
+}
+
+@keyframes slideInFromLeft {
+  0% {
+      transform: translateX(-100%);
+      opacity: 0;
+  }
+  100% {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+.pitch-message h1 {
+  font-size: 2.8rem; 
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.pitch-message p {
+  font-size: 1.2rem;
+  margin-top: 0;
+  line-height: 1.8;
+  max-width: 600px; 
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.9; 
+}
+.pitch-message button {
+  margin-top: 30px;
+  padding: 12px 40px;
+  background-color: #ffffff;
+  color: #8F7193;
+  border: 2px solid #ffffff; 
+  border-radius: 25px; 
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+}
+
+.pitch-message button:hover {
+  background-color: #8F7193;
+  color: #ffffff;
+  border-color: #8F7193;
+  transform: scale(1.05); 
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15); 
+}
+.button-try-free {
+  padding: 10px 20px;
+  margin-left: 20px;
+  background-color: #8F7193;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-try-free:hover {
+  background-color: #7a5f7d;
+}
